@@ -1,7 +1,7 @@
 ﻿/**
  *Ejercicio 3 de la relación 2.
  *
- * @author JavierAndrés Domínguez
+ * @author Javier Andrés Domínguez
  */
 public class Ejercicio3 {
   public static void main(String[] args) {
