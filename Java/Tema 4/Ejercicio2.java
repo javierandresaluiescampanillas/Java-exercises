@@ -6,7 +6,7 @@
  public class Ejercicio2 {
   public static void main(String[] args) {
 
-    System.out.print("Por favor, introduzca una hora del día (0 - 23): ");
+    System.out.print("Por favor, introduzca una hora del día: ");
     int hora = Integer.parseInt(System.console().readLine());
     
     if ((hora >= 6) && (hora <= 12)) {
@@ -22,7 +22,7 @@
     }
       
     if ((hora >= 24) || (hora < 0)) {
-      System.out.println("La hora introducida no es correcta.");
+      System.out.println("La hora introducida no es reconocida.");
     }
   }
 }
