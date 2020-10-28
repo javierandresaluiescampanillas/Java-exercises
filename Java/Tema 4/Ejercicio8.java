@@ -17,6 +17,10 @@
     
     System.out.print("Y por último la tercera nota: ");
     Double nota3 = Double.parseDouble(System.console().readLine());
+   
+    if ((nota1, nota2, nota3 > 10) || (nota1, nota2, nota3 < 0)) {
+	     System.out.print("Hay una nota con una valor imposible.");
+   	}
 
     double media = (nota1 + nota2 + nota3) / 3;
 
