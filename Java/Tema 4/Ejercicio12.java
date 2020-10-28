@@ -37,7 +37,7 @@
     }
     
     System.out.println("4. ¿En qué consiste el lenguaje máquina?");
-    System.out.println("a) Un lenguaje entendido por el monitro\nb) Los controles más básicos del pc como el ratón y el teclado.\nc) Un lenguaje que sólo puede ser entendido por la máquina basados en 0´s y 1´s según los porrazos que le des para que funcionen.");
+    System.out.println("a) Un lenguaje entendido por el monitor\nb) Los controles más básicos del pc como el ratón y el teclado.\nc) Un lenguaje que sólo puede ser entendido por la máquina basados en 0´s y 1´s según los porrazos que le des para que funcionen.");
     System.out.print("=> ");
     respuesta = System.console().readLine();
     if (respuesta.equals("c")) {
@@ -48,10 +48,16 @@
     System.out.println("a) 10\nb) Matrícula de honor\nc) Una palmadita en la espalda"); 
     System.out.print("=> ");
     respuesta = System.console().readLine();
-    if (respuesta.equals("a", "b", "c")) {
+    respuesta.toLowerCase();
+    
+    switch(respuesta) {
+    case "a":
+    case "b":
+    case "c":
       puntos++;
+      break;
     }
 
-    System.out.println("\nHa obtenido " + puntos + " puntos.");
+    System.out.println("\nHas sacado " + puntos + " puntos.");
   }
 }
